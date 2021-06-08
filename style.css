@@ -1,16 +1,95 @@
 /* Type your code here */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+}
+/* backgroung image */
+.container{
+	background-image: url(./assets/background-image1.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+	height: 715px;
+}
+/* logo */
+.logo{
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px 60px;
+}
+/* headings */
+#heading{
+	margin: 0px 0px 30px 80px;
+}
+#heading h1{
+	text-transform: uppercase;
+	font-size: 50px;
+	text-shadow: 2px 5px 5px #535353;
+}
+#heading h4{
+	text-transform: capitalize;
+	font-size: 30px;
+	color: rgb(92, 92, 92);
+}
+.table{
+	margin-left: 80px;
+	margin-bottom: 20px;
+}
+table{
+	width: 1000px;
+	font-size: 18px;
+	box-shadow: 1px 3px 5px #dadada;
+}
+table, th, td{
+	border-collapse: collapse;
+	background-color: #fff;
+}
+thead th, tbody tr, tfoot tr{
+	height: 40px;
+}
+tbody tr{
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+th{
+	background-color: rgb(253, 75, 10);
+	color: #fff;
+}
+.bolder{
+	font-weight: 900;
+}
+.dismiss{
+	color: gray;
+}
+.start{
+	text-align: start;
+}
+.middle{
+	text-align: center;
+}
+.end{
+	text-align: end;
+	padding-right: 25px;
+}
+.left{
+	padding-left: 25px;
+}
+.player{
+	color: rgb(37, 147, 250);
+}
+.hide{
+	display: none;
+	position: absolute;
+	top: 255px;
+}
+.player:hover + .hide{
+	color: blue;
+	display: block;
+}
 /* change the font family and spacing as per your project font */
 .footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
 	margin-left: 80px;
 	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
 }
